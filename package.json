@@ -1,0 +1,22 @@
+{
+  "name": "24---weather-app",
+  "version": "1.0.0",
+  "description": "This is weather app makes using html,css,js,node.js",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshkanade/Weather-APP.git"
+  },
+  "author": "Rajesh kanade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajeshkanade/Weather-APP/issues"
+  },
+  "homepage": "https://github.com/rajeshkanade/Weather-APP#readme",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}

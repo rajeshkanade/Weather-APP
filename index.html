@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP : Rajesh Kanade</title>
+ 
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- external css  -->
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="wave wave1 "></div>
+            <div class="wave wave2 "></div>
+            <div class="wave wave3 "></div>
+
+            <div class="up" id="WeatherCondition">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="down">
+                <h2><i class="fa-solid fa-street-view animate-left-right"></i><span>{%Location%}</span> <span class="or">|</span> <span>{%country%}</span>   </h2>
+                <p id="DateTime">Wed | OCT 2023 | 11:51 AM</p>
+                <h1>{%tempreture%} °C</h1>
+                <p>Min {%temMin%} °C | Max {%tempMax%} °C</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+
+    let weatherCon = "{%WeatherCOndition%}"
+    let up = document.getElementById("WeatherCondition")
+
+    if(weatherCon == "Sunny"){
+        up.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+    else if(weatherCon == "Clouds"){
+        up.innerHTML = '<i class="fa-solid fa-cloud"></i>'
+    }
+    else if(weatherCon == "Rain"){
+        up.innerHTML = '<i class="fa-solid fa-cloud-rain"></i>'
+    }
+    else if(weatherCon == "Thunderstorm"){
+        up.innerHTML = '<i class="fa-solid fa-cloud-bolt"></i>'
+    }
+    else{
+        up.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    
+</script>
+</html>
